@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
+        pluginid="io.jenkins.spotbugs.spotjenbugs">
+
+        <Detector class="io.jenkins.spotbugs.MyDetector" reports="MY_BUG" />
+        <Detector class="io.jenkins.spotbugs.CsrfDetector" reports="CSRF" />
+
+        <BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />
+        <BugPattern abbrev="CSRF" type="CSRF" category="SECURITY" />
+</FindbugsPlugin>
