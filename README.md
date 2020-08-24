@@ -10,6 +10,7 @@ Currently this has two detectors:
 Testing involves the following steps:
 1. Build this plugin.
 2. Add it to the target Jenkins plugin.
+```
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
@@ -23,4 +24,5 @@ Testing involves the following steps:
                     </plugins>
                 </configuration>
             </plugin>
+```
 3. Build the target plugin, being sure to run spotbugs.
